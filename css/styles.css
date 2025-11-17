@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* NAVIGATION */
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #45191f;
+    padding: 1.5em;
+    position: relative;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    flex: 1;
+}
+.search-bar input{
+    width: 30vw;
+    padding: 1vh;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+}
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+.nav-links a:hover{
+    color: #f8e2b6;
+}
+.actions{
+    display: flex;
+    align-items: center;
+}
+.actions a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 .5em;
+    font-size: large;
+}
+.actions a:hover{
+    color: #f8e2b6;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #45191f;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-nav ul li{
+    list-style: none;
+    margin: 0 1em;
+}
+.footer-nav a{
+    text-decoration:none;
+    color: #ffffff;
+    font-size:1.2em;
+}
+.footer-nav a:hover{
+    color: #f8e2b6;
+}
+.footer-socials{
+    display: flex;
+}
+.footer-socials a{
+    margin: 0 .5em;
+    font-size: large;
+    color: #ffffff;
+}
+.footer-socials a:hover{
+    color: #f8e2b6;
+}
+
+/* GENERAL */
+
+.logo img{
+    width: 12vw;
+    height: 17vh;
+}
+section{
+    margin-bottom: 3em;
+}
+section h2{
+    color: #45191f;
+    margin: 3vw;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* HOME PAGE */
+
+.cta{
+    width: 100vw; 
+    height: auto;
+    margin: 1.2em auto;
+    background-color: rgb(236, 236, 254);
+}
+.cta-img{
+    width: 100%;
+    text-align: center;
+}
+.books-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.book-card img{
+    width: 15vw;
+    height: 50vh;
+}
+.book-card .add-to-cart{
+    width: 15vw;
+    height: 6vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #16942a;
+}
+.add-to-cart p{
+    font-size: 1.2em;
+    margin-bottom: .2em;
+    color: #fff8e1;
+}
+.add-to-cart a{
+    text-decoration: none;
+    color: #fff8e1;
+}
+
+/* CATEGORIES PAGE */
+
+.categories{
+    height: 220vh;
+    width: 100vw;
+    margin: 0;
+}
+.categories-nav{
+    float: left;
+    width: 15vw;
+    height: 220vh;
+    background-color: #f8e2b6;
+}
+.categories-nav h3{
+    margin: 1em;
+}
+.categories-nav ul{
+    margin: 1em;
+}
+.categories-nav ul li{
+    list-style: none;
+    margin: 1em;
+}
+.categories-nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+}
+.main{
+    float: left;
+    width: 85vw;
+}
+.main h2{
+    margin: 1em 0.5em;
+}
+
+/* ABOUT PAGE */
+
+.about-content{
+    width: 100vw;
+    display: flex;
+}
+.about-content img{
+    width: 45vw;
+    height: 40vh;
+}
+.about-us{
+    width: 40vw;
+    margin: 2em;
+}
+.about-us p{
+    font-size: 1.2em;
+    letter-spacing: .3vh;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin-left: 1em;
+}
+.gallery img{
+    width: 30vw;
+    height: 35vh;
+}
+
+/* VOUCHERS PAGE */
+
+.voucher-purchase{
+    background-color: #f8e2b6;
+    padding: 4em 2em;
+    border-radius: 1em;
+    max-width: 40vw;
+    margin: 5vh auto;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+}
+.voucher-purchase h3{
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+.voucher-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.voucher-form label{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.voucher-form input,
+.voucher-form textarea{
+    padding: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    background-color: #ffffff;
+    width: 100%;
+}
+.voucher-form select{
+    padding: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    background-color: #ffffff;
+    width: 100%;
+    appearance: none;
+}
+.voucher-form textarea{
+    resize: vertical;
+    min-height: 10vh;
+}
+.voucher-form button{
+    background-color: #16942a;
+    color: #ffffff;
+    border-radius: 0.5em;
+    padding: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.voucher-form button:hover{
+    background-color: #000000;
+}
+
+/* CONTACT PAGE */
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4em;
+    padding: 5vh 5vw;
+}
+.left-col, .right-col{
+    flex: 1 1 30em;
+    background-color: #f8e2b6;
+    padding: 3em 2em;
+    border-radius: 1em;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+}
+.left-col h2, .right-col h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.contact-form label{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    color: #000000;
+}
+.contact-form input,
+.contact-form textarea{
+    padding: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    background-color: #ffffff;
+    width: 100%;
+}
+.contact-form textarea{
+    resize: vertical;
+    min-height: 15vh;
+}
+.contact-form button{
+    background-color: #16942a;
+    color: #ffffff;
+    border-radius: 0.5em;
+    padding: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+.contact-form button:hover{
+    background-color: #000000;
+}
+.contact-info{
+    margin-top: 2em;
+}
+.contact-info h3{
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    color: #333333;
+}
+.contact-info p{
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    color: #555555;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        font-size: .8em;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .navigation{
+        order: 2;
+    }
+    .actions{
+        position: absolute;
+        right: 1.5em;
+        top: 3em;
+        order: 1;
+    }
+    .search-bar input{
+        width: 80vw;
+    }
+    .nav-links{
+        gap: 2vh;
+    }
+    .footer{
+        align-items: center;
+        text-align: center;
+        gap: 2em;
+    }
+    .footer-nav ul{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .footer-socials a{
+        justify-content: center;
+        margin-bottom: 1.5em;
+    }
+}

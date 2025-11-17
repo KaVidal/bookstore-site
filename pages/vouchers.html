@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts Vouchers</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="../index.html"><img src="../media/logo.png" alt="logo"></a></h1>
+            </div>  
+            <div class="navigation">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search books...">
+                </div>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="../pages/categories.html">Categories</a>
+                    <a href="../pages/about.html">About</a>
+                    <a href="../pages/vouchers.html">Gift Vouchers</a>
+                    <a href="../pages/contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="actions">
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h2 class="playfair-display-headings">GIFT VOUCHERS</h2>
+        <div class="voucher-purchase">
+            <h3>Purchasing for</h3>
+            <form action="#" method="post" class="voucher-form">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="value">Gift Value</label>
+                <select name="value" id="value" required>
+                    <option value="" disabled selected>Select a value</option>
+                    <option value="25">$25</option>
+                    <option value="50">$50</option>
+                    <option value="75">$75</option>
+                    <option value="100">$100</option>
+                </select>
+                <label for="style">Gift Style</label>
+                <select name="style" id="style" required>
+                    <option value="" disabled selected>Select a style</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="christmas">Christmas</option>
+                    <option value="thankyou">Thank You</option>
+                    <option value="celebration">Celebration</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="message">Write your message...</textarea>
+                <button type="submit">ADD TO CART</button>
+            </form>
+        </div>        
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <h1><a href="../index.html"><img src="../media/logo.png" alt="logo"></a></h1>
+        </div> 
+        <div class="footer-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li> <a href="../pages/categories.html">Categories</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/vouchers.html">Gift Vouchers</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>  
+        </div>
+        <div class="footer-socials">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </div>      
+    </footer> 
+</body>
+</html>
